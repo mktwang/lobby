@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>RPS</title>
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <form id="name-form">
+      <h2>Please Enter Your Name</h2>
+      <input id="name-input" />
+    </form>
+    <div class="lobby hidden">
+      <div class="rps-wrapper">
+        <h2>Welcome to the lobby!</h2>
+        <ul id="events"></ul>
+        <div class="controls">
+          <div class="chat-wrapper">
+            <form id="chat-form">
+              <input id="chat" autocomplete="off" title="chat" />
+              <button id="say">Say</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="src/client.js"></script>
+  </body>
+</html>
