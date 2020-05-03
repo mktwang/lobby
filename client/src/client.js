@@ -42,6 +42,9 @@ function writeChat(data) {
   el.innerHTML = `${data.user}: ${data.msg}`;
   // el.innerHTML = text;
   parent.appendChild(el);
+
+  // then you can scroll down once to show the new messages
+  parent.scrollTop = parent.scrollHeight;
 }
 
 function writeJoinLobby(username) {
